@@ -17,14 +17,14 @@ public class RestfulAPI {
 	@Produces(MediaType.TEXT_PLAIN)
 	public String getValue(String value) {
 		sum += Integer.parseInt(value);
-		return "Hello worldd! Sum: " + sum;
+		return "Sum: " + sum;
 	}
  
 	// This method is called if HTML is requested
 	@GET
 	@Produces(MediaType.TEXT_HTML)
 	public String sayHelloInHtml() {
-		return "<html> " + "<title>" + "Hello world!" + "</title>"
-				+ "<body><h1>" + "Hello world!" + "</body></h1>" + "</html> ";
+		return "<html> " + "<title>" + "Welcome" + "</title>"
+				+ "<body><h1>" + "Test" + "</body></h1>" + "</html> ";
 	}
 }
